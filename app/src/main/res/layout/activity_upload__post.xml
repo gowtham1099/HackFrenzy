@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_Post">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginTop="130dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Upload Image/Video"
+        android:textColor="#C200ED"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/choose_image"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_round"
+        android:text="Choose Image"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/choose_video"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_round"
+        android:text="Choose Video"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/enter_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter description"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_round"
+        android:text="Upload"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/upload_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_round"
+        android:text="Upload"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="130dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/enter_tittle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="410dp"
+        android:ems="10"
+        android:hint="Enter tittle"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:visibility="invisible" />
+    <EditText
+        android:id="@+id/descr"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="410dp"
+        android:ems="10"
+        android:hint="Enter Description"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:visibility="invisible" />
+
+</RelativeLayout>

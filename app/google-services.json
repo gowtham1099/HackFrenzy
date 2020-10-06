@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608447487146",
+    "firebase_url": "https://first-project-23e38.firebaseio.com",
+    "project_id": "first-project-23e38",
+    "storage_bucket": "first-project-23e38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608447487146:android:8f238046e56f8470ae84d3",
+        "android_client_info": {
+          "package_name": "com.example.hackfrenzy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608447487146-3kfcunuilbjveg2amu2igqp7gr98b8ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo3Xe00CtQIkvkavEBALfNkmzdp1sIUG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608447487146-3kfcunuilbjveg2amu2igqp7gr98b8ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

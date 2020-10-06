@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFFFFFF"
+    android:visibility="visible"
+    tools:context=".Profile">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="#B703D8"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/bottom_nav" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="140dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_baseline_emoji_emotions_24"
+        app:civ_border_color="#C80AD6"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:maxLength="15"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/profile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/save_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="5dp"
+        android:background="#C266DC"
+        android:text="save"
+        android:textColor="#FFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_marginTop="170dp"
+        app:srcCompat="@drawable/profileui"></ImageView>
+
+    <TextView
+        android:id="@+id/profile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="290dp"
+        android:padding="5dp"
+        android:text="My Uploads"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="290dp"
+        android:tint="#9404AE"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/profile_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="336dp"
+        android:padding="5dp"
+        android:text="Share"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="336dp"
+        android:tint="#9404AE"
+        app:srcCompat="@drawable/ic_baseline_share_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/profile_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="382dp"
+        android:padding="5dp"
+        android:text="Settings"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="386dp"
+        android:tint="#9404AE"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="426dp"
+        android:padding="5dp"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="428dp"
+        android:tint="#9404AE"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginEnd="40dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3902078744336950/8331794355"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="470dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_baseline_star_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="469dp"
+        android:padding="5dp"
+        android:text="Rate us"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/name_edit"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/phone_edit"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="123dp"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/image_edit"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="135dp"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/save_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
+        android:background="#C266DC"
+        android:text="save"
+        android:textColor="#FFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/save_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="126dp"
+        android:background="@drawable/button_round"
+        android:text="save"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</FrameLayout>
